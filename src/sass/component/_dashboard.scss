@@ -166,10 +166,15 @@
   margin-top: 25px;
   margin-left: 20px;
   margin-right: 15px;
+  @include mobile{
+    align-items: center;
+
+  }
   @include desktop {
     margin-top: 20px;
     margin-left: 25px;
     flex-direction: column;
+
   }
 
   .current {
