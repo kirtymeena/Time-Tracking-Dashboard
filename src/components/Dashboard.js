@@ -28,42 +28,18 @@ const Dashboard = () => {
           </div>
           <div className="list">
             <div className="list_items">
-              <div
-                className="list_item1"
-                onClick={(e) => setTimeFrame(e.target.textContent)}
-              >
-                <button
-                  className="link"
-                  style={{
-                    color:
-                      timeFrame.toLowerCase() === "daily" ? "whitesmoke" : "",
-                  }}
-                >
+              <div className="list_item1" onClick={(e) => setTimeFrame(e.target.textContent)}>
+                <button className="link" style={{ color: timeFrame.toLowerCase() === "daily" ? "whitesmoke" : ""}} >
                   Daily
                 </button>
               </div>
-              <div
-                className="list_item2"
-                onClick={(e) => setTimeFrame(e.target.textContent)}
-              >
-                <button
-                  className="link2"
-                  style={{ color: timeFrame === "weekly" ? "whitesmoke" : "" }}
-                >
+              <div className="list_item2" onClick={(e) => setTimeFrame(e.target.textContent)}>
+                <button className="link2" style={{ color: timeFrame.toLowerCase() === "weekly" ? "whitesmoke" : "" }}>
                   Weekly
                 </button>
               </div>
-              <div
-                className="list_item3"
-                onClick={(e) => setTimeFrame(e.target.textContent)}
-              >
-                <button
-                  className="link"
-                  style={{
-                    color:
-                      timeFrame.toLowerCase() === "monthly" ? "whitesmoke" : "",
-                  }}
-                >
+              <div className="list_item3" onClick={(e) => setTimeFrame(e.target.textContent)}>
+                <button className="link" style={{ color:timeFrame.toLowerCase() === "monthly" ? "whitesmoke" : ""}}>
                   Monthly
                 </button>
               </div>
