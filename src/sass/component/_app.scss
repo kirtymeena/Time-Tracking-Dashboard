@@ -1,0 +1,13 @@
+@use "../utils/varibales" as *  ;
+
+body{
+    // min-width:100vw;
+    min-height:100vh;
+    border:2px solid green;
+    display: grid;
+    align-items: center;
+    background-color: $very-dark-blue;
+
+    
+
+}

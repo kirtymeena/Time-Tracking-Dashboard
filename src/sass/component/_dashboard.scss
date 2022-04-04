@@ -1,0 +1,212 @@
+@use "../utils/breakpoints" as *;
+@use "../utils/varibales" as *;
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter&family=Josefin+Sans:wght@300;600&family=Lexend+Deca&family=Rubik:wght@300;400;500&display=swap");
+
+.container {
+  display: grid;
+  gap: 20px;
+  row-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 250px));
+  grid-template-rows: repeat(7, 190px);
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Rubik", sans-serif;
+
+  @include desktop {
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-template-rows: 250px 250px;
+  }
+}
+
+.item {
+  border-radius: 12px;
+  color: whitesmoke;
+  // border: 2px solid black;
+}
+.item-1 {
+  background-color: $dark-blue;
+
+  // DESKTOP
+  @include desktop {
+    grid-row: span 2;
+    .profile {
+      height: 340px;
+      display: flex;
+      flex-direction: column;
+    }
+    .profile__info {
+      padding-left: 20px;
+      height: 90px;
+
+      .lg__text {
+        font-size: 40px;
+        font-weight: 300;
+      }
+    }
+
+    .outer {
+      .list_items {
+        display: flex;
+        flex-direction: column;
+
+        .list_item1 {
+          margin-left: 15px;
+          margin-top: 12px;
+        }
+        .list_item2 {
+          margin-left: 15px;
+          margin-top: 20px;
+        }
+        .list_item3 {
+          margin-left: 15px;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  .outer {
+    display: flex;
+    flex-direction: column;
+    .list_items {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 16px 0 16px;
+    }
+
+    button {
+      background-color: $dark-blue;
+      border: none;
+      font-size: 18px;
+      color: $desaturated-blue;
+      cursor: pointer;
+    }
+    button:hover {
+      color: whitesmoke;
+    }
+    button:focus {
+      color: whitesmoke;
+    }
+  }
+  .profile {
+    display: flex;
+    background-color: $desaturated-blue;
+    min-width: 280px;
+    min-height: 128px;
+    border-radius: 12px;
+    .upper__div {
+      // jeremy image
+      img {
+        margin-left: 25px;
+        margin-top: 20px;
+        height: 80px;
+        width: 80px;
+        border: 2px solid white;
+        border-radius: 50%;
+      }
+    }
+    .profile__info {
+      margin-top: 30px;
+      margin-left: 14px;
+
+      .small__text {
+        font-size: 12px;
+        font-weight: 500;
+        color: $pale-blue;
+      }
+      .lg__text {
+        @include mobile {
+          font-size: 20px;
+        }
+        font-weight: 300;
+        margin-top: 10px;
+        color: whitesmoke;
+      }
+    }
+  }
+}
+
+.item-2 {
+  position: relative;
+
+  img {
+    float: right;
+    margin-right: 9px;
+  }
+
+  .sub-div {
+    background-color: $dark-blue;
+    cursor: pointer;
+    margin-top: 60px;
+    min-height: 132px;
+    min-width: 280px;
+    border-radius: 12px;
+    position: absolute;
+
+    @include desktop {
+      margin-top: 72px;
+      min-height: 180px;
+    }
+  }
+  .sub-div:hover {
+    background-color: #2a2e67;
+  }
+}
+
+.header {
+  display: flex;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 15px;
+  @include desktop {
+    margin-top: 20px;
+    margin-left: 25px;
+    flex-direction: column;
+  }
+
+  .current {
+    font-weight: 300;
+    font-size: 22px;
+    @include desktop {
+      font-size: 40px;
+    }
+  }
+  .last_week {
+    font-weight: 300;
+    font-size: 15px;
+    color: $pale-blue;
+    @include desktop {
+      margin-top: 30px;
+    }
+  }
+}
+.title {
+  margin-left: 20px;
+  margin-top: 20px;
+  font-weight: 500;
+  width: 80px;
+
+  @include desktop {
+    margin-left: 25px;
+    margin-top: 25px;
+  }
+}
+
+.icon {
+  margin-left: 20px;
+  margin-left: 8rem;
+  margin-top: 20px;
+}
+.info__icon {
+  cursor: pointer;
+  fill: #bbc0ff;
+}
+.info__icon:hover {
+  fill: white;
+}
