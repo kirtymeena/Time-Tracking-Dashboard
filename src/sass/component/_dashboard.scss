@@ -6,6 +6,9 @@
   display: grid;
   gap: 20px;
   row-gap: 20px;
+  max-width: 1280px;  
+  width:90vw;
+  margin-inline: auto;
   grid-template-columns: repeat(auto-fit, minmax(280px, 250px));
   grid-template-rows: repeat(7, 190px);
   justify-content: center;
@@ -14,9 +17,9 @@
   font-family: "Rubik", sans-serif;
 
   @include desktop {
-    margin-left: 20px;
-    margin-right: 20px;
+    
     grid-template-rows: 250px 250px;
+    margin-inline:auto;
   }
 }
 
