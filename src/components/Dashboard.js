@@ -11,7 +11,6 @@ import jeremy from "../images/image-jeremy.png";
 const Dashboard = () => {
   const [timeFrame, setTimeFrame] = useState("weekly");
   useEffect(() => {
-    console.log(timeFrame);
   }, [timeFrame]);
   return (
     <div className="container">
