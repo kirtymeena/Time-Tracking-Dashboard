@@ -8,12 +8,12 @@ function App() {
       window.location.href="https://www.frontendmentor.io/home"
     }
   return (
-    <div className="App">
+    <main className="App">
         <Dashboard/>
         <footer>
         <p>Challenge by <span onClick={visitWebsite}>Frontend Mentor</span>. Coded by <span onClick={visitProfile}>Kirty Meena</span></p>.
         </footer>
-    </div>
+    </main>
   );
 }
 
