@@ -13,7 +13,7 @@ const Dashboard = () => {
   useEffect(() => {
   }, [timeFrame]);
   return (
-    <div className="container">
+    <main className="container">
       <div className="item item-1">
         <div className="outer">
           <div className="profile">
@@ -111,7 +111,7 @@ const Dashboard = () => {
           </div>
         </div>
       ))}
-    </div>
+    </main>
   );
 };
 
